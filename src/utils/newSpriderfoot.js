@@ -111,7 +111,7 @@ getTimeRangeData();
 // function getTimeRangeData(start = dayjs().format("YYYY-MM-DD"), end = dayjs().format("YYYY-MM-DD")) {
 // function getTimeRangeData(start = "2024-01-01", end = "2024-03-17") {
 // function getTimeRangeData(start = "2024-10-18", end = "2024-10-20") {
-function getTimeRangeData(start = dayjs().add(0, "day").format("YYYY-MM-DD"), end = dayjs().add(1, "day").format("YYYY-MM-DD")) {
+function getTimeRangeData(start = dayjs().add(-1, "day").format("YYYY-MM-DD"), end = dayjs().add(-1, "day").format("YYYY-MM-DD")) {
     let startTime = dayjs(start).format("YYYY-MM-DD");
     rangeTime.push(startTime);
     const endTime = dayjs(end).format("YYYY-MM-DD");
